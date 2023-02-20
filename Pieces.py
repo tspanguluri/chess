@@ -272,7 +272,7 @@ class Queen:
 	def copy(self) -> "Queen":
 		return Queen(self.row, self.col, self.color)
 
-	# Queens can move any number of spaces in stright lines or in diagonals
+	# Queens can move any number of spaces in straight lines or in diagonals
 	def canMoveTo(self, targetRow, targetCol, colors, board) -> bool:
 		if colors[targetRow][targetCol]==self.color:
 			return False
